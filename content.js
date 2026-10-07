@@ -11,37 +11,34 @@ window.SITE_CONTENT = {
   "github": "https://github.com/headhunterJames123",
   "demo": false,
   "directions": [
-    {
-      "title": "物理ai、robotics starup寻找各方方向的负责人，最高可以给到联创",
-      "english": "starup",
-      "description": "目前十几个人，融资十几亿，ceo新能源自动驾驶高管，谷歌学术引用50万+，非常有资源。",
+ {
+      "title": "robotics starup 公司",
+      "english": "上海/北京/合肥",
+      "description": "种子轮，融资几十亿，ceo是工业界高管+谷歌学术引用50万+，学术大牛，最高可以给到联创",
       "roles": [
-        "AI infra负责人",
-        "多模态模负责人",
-        "evals数据负责人",
-        "pre-training负责人"
+        "ai infra负责人",
+        "多模态负责人",
+        "sim负责人、evals负责人，pre-training负责人"
       ],
       "keywords": "Pre-training / Post-training / Multimodal",
       "tags": [
-        "基模研究员",
-        "多模态算法工程师",
-        "模型方向负责人"
+        "ai infra负责人",
+        "多模态负责人",
+        "sim负责人、evals负责人，pre-training负责人"
       ]
     },
     {
-      "title": "世界模型与视频生成",
-      "english": "World Models & Video",
-      "description": "关注视频生成、时空建模、交互式生成，以及面向物理世界的预测与学习。",
+      "title": "D轮Ai Infra公司",
+      "english": 北美/新加坡",
+      "description": "推理加速领头羊公司，ARR10亿美金+，估值300亿美金",
       "roles": [
-        "世界模型研究员",
-        "视频生成算法工程师",
-        "研究负责人"
+        "post-training/RL",
+        "Performance Optimization",
       ],
       "keywords": "Video Generation / Interactive Models / Physical AI",
       "tags": [
-        "世界模型研究员",
-        "视频生成算法工程师",
-        "研究负责人"
+        "post-training/RL",
+        "Performance Optimization",
       ]
     },
     {
