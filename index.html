@@ -1,282 +1,107 @@
-<!doctype html>
-<html lang="zh-CN">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="个人专业方向、职位机会与行业观察。"><title>个人主页</title><style>:root{--paper:#f7f6f1;--ink:#252923;--muted:#74776d;--line:#dcded4;--orange:#e66b3c;--green:#e9eddf}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}button,input{font:inherit}button,a,input{ -webkit-tap-highlight-color:transparent}button{cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--orange);outline-offset:4px}.wrap{max-width:1200px;margin:auto;padding-left:40px;padding-right:40px}header{min-height:108px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;gap:12px;align-items:center;font-weight:700}.logo{font-size:26px;background:var(--ink);color:var(--paper);width:36px;height:36px;line-height:36px;text-align:center;border-radius:50%}.brand-note{font-size:10px;color:var(--muted);font-weight:400;letter-spacing:1px}nav{display:flex;gap:28px;font-size:13px}.nav-contact{border-bottom:1px solid var(--ink)}.hero{padding-top:65px;padding-bottom:88px;display:grid;grid-template-columns:1.4fr 1fr;gap:55px;align-items:center}.eyebrow{font-size:11px;letter-spacing:2px;font-weight:600;margin:0 0 24px}.dot{display:inline-block;width:7px;height:7px;background:var(--orange);border-radius:50%;margin-right:10px}h1{font-size:clamp(36px,4.5vw,59px);line-height:1.32;letter-spacing:-2px;font-weight:500;white-space:pre-line;margin:0 0 25px}.intro{font-size:14px;color:var(--muted);max-width:490px;line-height:1.95}.hero-actions{display:flex;align-items:center;gap:28px;margin-top:32px}.button{display:inline-flex;background:var(--ink);color:white;border:0;padding:13px 22px;gap:26px;font-size:13px;border-radius:3px}.button:hover{background:#444c3a}.text-link{font-size:13px}.demo{font-size:11px;color:var(--muted);margin-top:24px}.hero-art{height:405px;background:var(--green);position:relative;overflow:hidden;border-radius:3px}.art-top{display:flex;justify-content:space-between;font-size:8px;letter-spacing:1px;padding:26px}.orbit{width:260px;height:260px;border:1px solid #a6b29b;border-radius:50%;position:absolute;top:74px}.orbit-one{left:20px}.orbit-two{right:20px}.art-center{position:absolute;inset:155px 0 auto;text-align:center;font-size:44px;letter-spacing:8px}.art-center span{display:block;font-size:8px;letter-spacing:2px;margin-top:8px}.art-tag{position:absolute;padding:5px 13px;font-size:12px;background:var(--paper);border:1px solid #c3cbb7;border-radius:30px}.tag-one{left:36px;top:112px;transform:rotate(-12deg)}.tag-two{right:28px;bottom:112px;background:var(--orange);color:white;border:0;transform:rotate(10deg)}.art-bottom{position:absolute;bottom:24px;left:26px;right:26px;font-size:11px;display:flex;justify-content:space-between;align-items:center}.art-bottom span{font-size:43px;color:var(--orange);line-height:1}.about{display:grid;grid-template-columns:1fr 2fr;gap:60px;padding-top:30px;padding-bottom:32px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.about .eyebrow{margin-top:8px}.about p:last-child{margin:0;max-width:680px;font-size:17px;line-height:1.9}.section{padding-top:78px;padding-bottom:78px}.section-title{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:36px}.section-title .eyebrow{color:var(--muted);margin-bottom:12px}h2{font-size:32px;line-height:1.35;font-weight:500;letter-spacing:-1px;margin:0}.section-title>p{font-size:12px;color:var(--muted);margin:0}.direction-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}.direction{border-top:2px solid var(--ink);padding-top:22px}.direction .number{color:var(--orange);font-size:12px}.direction h3{font-size:22px;font-weight:500;margin:20px 0 2px}.english{font-size:9px;letter-spacing:1.5px;color:var(--muted)}.direction p{font-size:13px;color:var(--muted);margin:20px 0;min-height:66px}.tag{font-size:10px;border:1px solid var(--line);border-radius:30px;padding:4px 10px;margin-right:6px;display:inline-block}.jobs-section{background:#eeeee7}.accent{color:var(--orange)}.job-toolbar{display:flex;justify-content:space-between;gap:20px;align-items:center}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid #d7d9cd;background:transparent;padding:7px 15px;border-radius:25px;font-size:12px}.filter.active{background:var(--ink);color:white;border-color:var(--ink)}.search{display:flex;align-items:center;gap:8px;border-bottom:1px solid #a8ad9f;padding:8px}.search input{width:160px;background:none;border:0;font-size:12px;padding:2px;min-width:0}.small{font-size:11px;color:var(--muted)}.job{border-top:1px solid #d4d7c9;padding:23px 0;display:grid;grid-template-columns:1.8fr 1fr auto;align-items:center;gap:20px}.job h3{font-size:19px;margin:0 0 6px;font-weight:500}.job p{font-size:11px;color:var(--muted);margin:0}.job-status{font-size:10px;color:#596246}.job-status:before{content:'●';font-size:7px;margin-right:6px}.job button{background:none;border:1px solid #c3c8b8;padding:8px 14px;font-size:11px}.job:last-child{border-bottom:1px solid #d4d7c9}.post-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}.post{padding:26px 0;border-top:1px solid var(--ink)}.post-meta{color:var(--orange);font-size:10px;letter-spacing:1px}.post h3{font-size:23px;font-weight:500;margin:18px 0 12px}.post p{font-size:13px;color:var(--muted)}.post button,.post a{font-size:12px;background:none;border:0;padding:0;border-bottom:1px solid #b5b9a9}.future{border:1px dashed #c8cbbf;padding:22px;display:flex;gap:22px;align-items:center;margin-top:25px}.future>span{font-size:28px;color:#929987}.future h3{font-size:14px;margin:0;font-weight:500}.future p{font-size:12px;color:var(--muted);margin:4px 0}.contact{background:var(--ink);color:var(--paper);padding-top:46px;padding-bottom:46px;max-width:1120px}.contact .eyebrow{color:#afb8a6}.contact h2{font-size:44px}.contact h2 span{color:#e79168;padding-left:28px}.contact-bottom{display:flex;justify-content:space-between;align-items:center;gap:25px;margin-top:30px}.contact-bottom p{font-size:12px;color:#bac1b3}.contact a{display:inline-block;border-bottom:1px solid #afb8a6;padding:8px 0;margin-right:20px;font-size:13px}.contact .pending{font-size:12px;color:#c6ccbf}footer{padding-top:30px;padding-bottom:30px;display:flex;justify-content:space-between;gap:15px;font-size:10px;color:var(--muted)}dialog{border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);max-width:620px;width:calc(100% - 32px);padding:40px;max-height:85vh}dialog::backdrop{background:#20271dcc;backdrop-filter:blur(3px)}dialog h2{font-size:26px;padding-right:15px}dialog p,dialog li{font-size:14px;white-space:pre-line}dialog .eyebrow{color:var(--orange)}.close{position:absolute;right:13px;top:9px;border:0;background:none;font-size:28px}.skip{position:fixed;left:12px;top:-100px;background:white;padding:12px;z-index:10}.skip:focus{top:12px}.empty{padding:30px 0;color:var(--muted);font-size:14px}@media(max-width:800px){.wrap{padding-left:24px;padding-right:24px}header{padding-top:20px;padding-bottom:20px;flex-wrap:wrap;min-height:0}.brand-note{display:none}nav{gap:18px;font-size:12px;flex-wrap:wrap}.hero{grid-template-columns:1fr;gap:35px;padding-top:40px;padding-bottom:45px}.hero-art{height:320px}.orbit{top:34px;left:calc(50% - 165px);width:240px;height:240px}.orbit-two{left:calc(50% - 75px)}.art-center{top:116px}.tag-one{top:75px}.tag-two{bottom:70px}.about{grid-template-columns:1fr;gap:5px}.about p:last-child{font-size:15px}.section{padding-top:48px;padding-bottom:48px}.direction-grid{grid-template-columns:1fr;gap:24px}.direction p{min-height:0}.section-title{align-items:start;flex-direction:column}h2{font-size:28px}.job-toolbar{align-items:stretch;flex-direction:column}.search input{width:100%}.job{grid-template-columns:1fr auto;gap:10px}.job-status{grid-column:1;grid-row:2}.job button{grid-column:2;grid-row:1/3}.job h3{font-size:17px}.post-grid{grid-template-columns:1fr;gap:5px}.contact{margin:0 16px;padding:30px 24px}.contact h2{font-size:34px}.contact-bottom{align-items:start;flex-direction:column;gap:12px}footer{flex-wrap:wrap}.hero-actions{gap:16px}.button{padding:12px 16px}.intro{font-size:13px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style></head>
+<!DOCTYPE html>
+<!-- saved from url=(0086)file:///Users/jameszhang/Documents/Codex/2026-09-29/dak/outputs/simple-site/index.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="James Zhang，专注人工智能、具身智能与机器人领域的人才招聘。">
+  <title>James Zhang｜AI 与机器人人才招聘</title>
+  <style>
+    body { margin: 0; background: #faf9f6; color: #292d2a; font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.9; }
+    main { max-width: 760px; margin: auto; padding: 64px 24px; }
+    header { padding-bottom: 32px; }
+    h1 { margin: 0; font-size: 36px; font-weight: 600; }
+    h2 { margin: 0 0 20px; font-size: 22px; }
+    h3 { margin: 24px 0 8px; font-size: 17px; }
+    p { margin: 10px 0; }
+    section { border-top: 1px solid #dddcd5; padding: 32px 0; }
+    a { color: #366651; text-underline-offset: 4px; }
+    a:focus-visible { outline: 2px solid #366651; outline-offset: 4px; }
+    nav { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 10px 24px; font-size: 14px; }
+    ul { padding-left: 22px; }
+    li { margin: 8px 0; }
+    .note, footer { color: #72766f; font-size: 14px; }
+    footer { border-top: 1px solid #dddcd5; padding-top: 24px; }
+    @media (max-width: 600px) { main { padding-top: 36px; } h1 { font-size: 30px; } }
+  </style>
+</head>
 <body>
-<a class="skip" href="#main">跳至正文</a>
-<header class="wrap"><a class="brand" href="#" aria-label="回到首页"><span class="logo">↗</span><span id="name">个人主页</span><span class="brand-note">/ PERSONAL SPACE</span></a><nav aria-label="主导航"><a href="#focus">我的方向</a><a href="#opportunities">职位机会</a><a href="#notes">内容与观察</a><a class="nav-contact" href="#contact">聊一聊 ↗</a></nav></header>
-<main id="main">
-<section class="hero wrap"><div class="hero-main"><p class="eyebrow"><span class="dot"></span><span id="role"></span></p><h1 id="headline"></h1><p id="intro" class="intro"></p><div class="hero-actions"><a class="button" href="#opportunities">探索职位机会 <span>↗</span></a><a class="text-link" href="#focus">了解我的方向 ↓</a></div><p id="demo-note" class="demo">内容预览 · 当前为示例，非真实招聘信息</p></div><aside class="hero-art" aria-label="连接人与机会"><div class="art-top">PEOPLE. POSSIBILITIES.<span>01 / ∞</span></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-center">连接<span>THE RIGHT CONNECTION</span></div><span class="art-tag tag-one">人才</span><span class="art-tag tag-two">机会 ↗</span><div class="art-bottom">每一次连接<br>都是新的可能。<span>✳</span></div></aside></section>
-<section class="about wrap"><span class="eyebrow">A LITTLE ABOUT ME</span><p id="about"></p></section>
-<section id="focus" class="section wrap"><div class="section-title"><div><p class="eyebrow">01 / AREAS OF FOCUS</p><h2>深耕的方向</h2></div><p>从理解行业开始，<br>关注人与业务的长期契合。</p></div><div id="directions" class="direction-grid"></div></section>
-<section id="opportunities" class="jobs-section"><div class="wrap section"><div class="section-title"><div><p class="eyebrow">02 / OPPORTUNITIES</p><h2>下一站，新的可能<span class="accent">。</span></h2></div><p>在这里发现正在推进的机会，<br>也欢迎聊聊你的下一步。</p></div><div class="job-toolbar"><div id="filters" class="filters" role="group" aria-label="职位方向筛选"></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="搜索职位、地点" aria-label="搜索职位、地点"></label></div><p id="job-count" class="small" aria-live="polite"></p><div id="jobs"></div></div></section>
-<section id="notes" class="section wrap"><div class="section-title"><div><p class="eyebrow">03 / NOTES & IDEAS</p><h2>观察、思考与记录</h2></div><span class="small">持续更新的个人内容空间 ↗</span></div><div id="posts" class="post-grid"></div><div class="future"><span>＋</span><div><h3>更多内容，慢慢生长。</h3><p>这里会继续收录新的观点、项目与工作手记。</p></div></div></section>
-<section id="contact" class="contact wrap"><p class="eyebrow">LET’S CONNECT</p><h2>好的机会，<br>从一次对话开始<span>↗</span></h2><div class="contact-bottom"><p>无论你正在寻找下一步，还是希望交流行业与人才，<br>都欢迎与我联系。</p><div id="contact-links"></div></div></section>
-</main><footer class="wrap"><span id="copyright"></span><span>人与机会，持续连接。</span><a href="#">回到顶部 ↑</a></footer>
-<dialog id="detail"><button id="close-dialog" class="close" aria-label="关闭详情">×</button><div id="detail-content"></div></dialog>
-<script>// 日常更新修改本文件。新增职位复制 jobs 中的一项；新增文章参考 README.md。
-window.SITE_CONTENT = {
-  "name": "James Zhang",
-  "role": "猎头 · AI & ROBOTICS",
-  "headline": "连接前沿技术，\n与创造未来的人。",
-  "intro": "专注人工智能与机器人领域的人才招聘。 关注研究、工程与技术管理人才的长期发展。",
-  "about": "你好，我是 James，一名关注 AI 与具身智能领域的猎头。Wechat：18874489166.\n我的工作主要围绕大模型、世界模型、3D 生成和机器人展开，连接研究、工程与技术管理人才和相关团队。\n我希望了解你正在做的事情，也关注你下一步想解决什么问题。除了具体职位，也欢迎交流技术方向、团队选择和职业发展。",
-  "email": "james.zhang@1479@gmail.com",
-  "wechat": "18874489166",
-  "linkedin": "https://www.linkedin.com/in/james-zhang-35101916b/",
-  "github": "https://github.com/headhunterJames123",
-  "demo": false,
-  "directions": [
-    {
-      "title": "robotics starup 公司",
-      "english": "上海/北京/合肥",
-      "description": "种子轮，融资几十亿，ceo是工业界高管+谷歌学术引用50万+，学术大牛，最高可以给到联创",
-      "roles": [
-        "ai infra负责人",
-        "多模态负责人",
-        "sim负责人、evals负责人，pre-training负责人"
-      ],
-      "keywords": "Pre-training / Post-training / Multimodal",
-      "tags": [
-        "ai infra负责人",
-        "多模态负责人",
-        "sim负责人、evals负责人，pre-training负责人"
-      ]
-    },
-    {
-      "title": "D轮Ai Infra公司",
-      "english": 北美/新加坡",
-      "description": "推理加速领头羊公司，ARR10亿美金+，估值300亿美金",
-      "roles": [
-        "post-training/RL",
-        "Performance Optimization",
-      ],
-      "keywords": "Video Generation / Interactive Models / Physical AI",
-      "tags": [
-        "post-training/RL",
-        "Performance Optimization",
-      ]
-    },
- {
-      "title": "3D 生成与图形学",
-      "english": "3D Generation & Graphics",
-      "description": "关注 3D 资产生成、几何与纹理建模，以及图形学和生成模型的结合。",
-      "roles": [
-        "3D 生成研究员",
-        "图形学研究员",
-        "机器学习算法工程师"
-      ],
-      "keywords": "3D Generative AI / Geometry / Rendering",
-      "tags": [
-        "3D 生成研究员",
-        "图形学研究员",
-        "机器学习算法工程师"
-      ]
-    },
-    {
-      "title": "具身智能与机器人",
-      "english": "Embodied AI & Robotics",
-      "description": "关注机器人模型、感知与控制，以及把研究转化为真实系统的软硬件团队。",
-      "roles": [
-        "具身模型研究员",
-        "机器人系统工程师",
-        "硬件研发负责人"
-      ],
-      "keywords": "VLA / Robot Learning / Hardware",
-      "tags": [
-        "具身模型研究员",
-        "机器人系统工程师",
-        "硬件研发负责人"
-      ]
-    },
-    {
-      "title": "机器学习系统与基础设施",
-      "english": "ML Systems & Infrastructure",
-      "description": "关注大规模训练、高效推理、GPU 性能优化，以及模型研发所需的数据基础设施。",
-      "roles": [
-        "ML Systems 工程师",
-        "训练与推理优化工程师",
-        "数据基础设施工程师"
-      ],
-      "keywords": "Distributed Training / Inference / GPU / Data",
-      "tags": [
-        "ML Systems 工程师",
-        "训练与推理优化工程师",
-        "数据基础设施工程师"
-      ]
-    }
-  ],
-  "jobs": [
-    {
-      "title": "基模研究员",
-      "category": "大模型与多模态",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注基模训练、多模态理解与生成，以及支撑模型迭代的算法研究。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    },
-    {
-      "title": "多模态算法工程师",
-      "category": "大模型与多模态",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注基模训练、多模态理解与生成，以及支撑模型迭代的算法研究。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    },
-    {
-      "title": "模型方向负责人",
-      "category": "大模型与多模态",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注基模训练、多模态理解与生成，以及支撑模型迭代的算法研究。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    },
-    {
-      "title": "世界模型研究员",
-      "category": "世界模型与视频生成",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注视频生成、时空建模、交互式生成，以及面向物理世界的预测与学习。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    },
-    {
-      "title": "视频生成算法工程师",
-      "category": "世界模型与视频生成",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注视频生成、时空建模、交互式生成，以及面向物理世界的预测与学习。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    },
-    {
-      "title": "研究负责人",
-      "category": "世界模型与视频生成",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注视频生成、时空建模、交互式生成，以及面向物理世界的预测与学习。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    },
-    {
-      "title": "3D 生成研究员",
-      "category": "3D 生成与图形学",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注 3D 资产生成、几何与纹理建模，以及图形学和生成模型的结合。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    },
-    {
-      "title": "图形学研究员",
-      "category": "3D 生成与图形学",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注 3D 资产生成、几何与纹理建模，以及图形学和生成模型的结合。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    },
-    {
-      "title": "机器学习算法工程师",
-      "category": "3D 生成与图形学",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注 3D 资产生成、几何与纹理建模，以及图形学和生成模型的结合。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    },
-    {
-      "title": "具身模型研究员",
-      "category": "具身智能与机器人",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注机器人模型、感知与控制，以及把研究转化为真实系统的软硬件团队。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    },
-    {
-      "title": "机器人系统工程师",
-      "category": "具身智能与机器人",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注机器人模型、感知与控制，以及把研究转化为真实系统的软硬件团队。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    },
-    {
-      "title": "硬件研发负责人",
-      "category": "具身智能与机器人",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注机器人模型、感知与控制，以及把研究转化为真实系统的软硬件团队。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    },
-    {
-      "title": "ML Systems 工程师",
-      "category": "机器学习系统与基础设施",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注大规模训练、高效推理、GPU 性能优化，以及模型研发所需的数据基础设施。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    },
-    {
-      "title": "训练与推理优化工程师",
-      "category": "机器学习系统与基础设施",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注大规模训练、高效推理、GPU 性能优化，以及模型研发所需的数据基础设施。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    },
-    {
-      "title": "数据基础设施工程师",
-      "category": "机器学习系统与基础设施",
-      "location": "地点待沟通",
-      "type": "",
-      "status": "长期关注",
-      "summary": "关注大规模训练、高效推理、GPU 性能优化，以及模型研发所需的数据基础设施。 这是长期关注的岗位方向，具体在招职位、团队背景和要求以进一步沟通为准。",
-      "requirements": [],
-      "url": ""
-    }
-  ],
-  "posts": []
-};
-</script><script>const data = window.SITE_CONTENT;
-const $ = id => document.getElementById(id);
-const el = (tag, text, cls) => { const n=document.createElement(tag); if(text != null)n.textContent=text;if(cls)n.className=cls;return n; };
-const safeUrl = value => {try{const u=new URL(value);return ['https:','http:'].includes(u.protocol)?u.href:null;}catch{return null;}};
-const link = (text,url,cls) => {const a=el('a',text,cls);a.href=url;return a;};
-$('name').textContent=data.name;$('role').textContent=data.role;$('headline').textContent=data.headline;$('intro').textContent=data.intro;$('about').textContent=data.about;$('demo-note').hidden=!data.demo;document.title=data.name+' · AI 与机器人人才招聘';
-document.querySelector('meta[name="description"]').content=data.intro;
-$('copyright').textContent='© '+new Date().getFullYear()+' '+data.name;
-data.directions.forEach((d,i)=>{const card=el('article',null,'direction');card.append(el('span',String(i+1).padStart(2,'0'),'number'),el('h3',d.title),el('div',d.english,'english'),el('p',d.description));const tags=el('div');d.tags.forEach(t=>tags.append(el('span',t,'tag')));card.append(tags);$('directions').append(card);});
-const dialog=$('detail');let lastTrigger;
-function showDetail(title,meta,body,requirements,url){lastTrigger=document.activeElement;const root=$('detail-content');root.replaceChildren(el('p',meta,'eyebrow'),el('h2',title),el('p',body));if(requirements?.length){const list=el('ul');requirements.forEach(r=>list.append(el('li',r)));root.append(list);}if(safeUrl(url))root.append(link('查看完整信息 ↗',safeUrl(url),'button'));else if(data.email){root.append(link('联系 James ↗','mailto:'+data.email+'?subject='+encodeURIComponent(title),'button'));}dialog.showModal();}
-$('close-dialog').addEventListener('click',()=>dialog.close());dialog.addEventListener('close',()=>lastTrigger?.focus());dialog.addEventListener('click',e=>{const r=dialog.getBoundingClientRect();if(e.target===dialog&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))dialog.close();});
-let category='全部';const categories=['全部',...new Set(data.jobs.map(j=>j.category))];
-categories.forEach(c=>{const b=el('button',c,'filter'+(c===category?' active':''));b.setAttribute('aria-pressed',String(c===category));b.addEventListener('click',()=>{category=c;[...$('filters').children].forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});renderJobs();});$('filters').append(b);});
-function renderJobs(){const query=$('search').value.trim().toLowerCase();const jobs=data.jobs.filter(j=>(category==='全部'||j.category===category)&&[j.title,j.location,j.category].join(' ').toLowerCase().includes(query));$('jobs').replaceChildren();$('job-count').textContent=jobs.length+' 个岗位方向 · 具体招聘状态以沟通为准';jobs.forEach(j=>{const row=el('article',null,'job');const info=el('div');info.append(el('h3',j.title),el('p',[j.category,j.location,j.type].filter(Boolean).join(' / ')));const b=el('button','了解岗位 ↗');b.setAttribute('aria-label','了解'+j.title);b.addEventListener('click',()=>showDetail(j.title,j.status+' / '+j.category,j.summary,j.requirements,j.url));row.append(info,el('span',j.status,'job-status'),b);$('jobs').append(row);});if(!jobs.length)$('jobs').append(el('p','暂时没有匹配的职位，试试其他关键词或方向。','empty'));}
-$('search').addEventListener('input',renderJobs);renderJobs();
-data.posts.forEach(p=>{const card=el('article',null,'post');card.append(el('div',[p.category,p.date].filter(Boolean).join(' / '),'post-meta'),el('h3',p.title),el('p',p.excerpt));if(safeUrl(p.url))card.append(link('阅读全文 ↗',safeUrl(p.url)));else{const b=el('button','阅读记录 ↗');b.addEventListener('click',()=>showDetail(p.title,p.category,p.body));card.append(b);}$('posts').append(card);});
-if(!data.posts.length)$('posts').append(el('p','第一篇观察，正在酝酿。','empty'));
-if(data.email)$('contact-links').append(link('邮件联系 ↗','mailto:'+data.email));if(safeUrl(data.linkedin))$('contact-links').append(link('LinkedIn ↗',safeUrl(data.linkedin)));if(safeUrl(data.github))$('contact-links').append(link('GitHub ↗',safeUrl(data.github)));if(data.wechat)$('contact-links').append(el('p','微信：'+data.wechat,'pending'));if(!data.email&&!data.linkedin&&!data.wechat)$('contact-links').append(el('p','更多联系方式待补充','pending'));
-</script></body></html>
+<main>
+
+  <!-- 修改这里的姓名和一句话介绍 -->
+  <header>
+    <h1>James Zhang</h1>
+    <p>专注人工智能、具身智能与机器人领域的人才招聘。</p>
+    <nav aria-label="页面导航">
+      <a href="file:///Users/jameszhang/Documents/Codex/2026-09-29/dak/outputs/simple-site/index.html#about">关于我</a>
+      <a href="file:///Users/jameszhang/Documents/Codex/2026-09-29/dak/outputs/simple-site/index.html#focus">专业方向</a>
+      <a href="file:///Users/jameszhang/Documents/Codex/2026-09-29/dak/outputs/simple-site/index.html#jobs">岗位方向</a>
+      <a href="file:///Users/jameszhang/Documents/Codex/2026-09-29/dak/outputs/simple-site/index.html#updates">近期更新</a>
+      <a href="file:///Users/jameszhang/Documents/Codex/2026-09-29/dak/outputs/simple-site/index.html#contact">联系我</a>
+    </nav>
+  </header>
+
+  <!-- 个人介绍：直接修改 p 标签中间的文字 -->
+  <section id="about">
+    <h2>关于我</h2>
+    <p>你好，我是 James，一名关注 AI 与具身智能领域的猎头。</p>
+    <p>我的工作主要围绕大模型、世界模型、3D 生成和机器人展开，连接研究、工程与技术管理人才和相关团队。</p>
+    <p>除了具体职位，也欢迎交流技术方向、团队选择和职业发展。</p>
+  </section>
+
+  <!-- 新增方向：复制一组 h3 和 p，修改文字即可 -->
+  <section id="focus">
+    <h2>专业方向</h2>
+
+    <h3>大模型与多模态</h3>
+    <p>关注基模训练、多模态理解与生成，以及支撑模型迭代的算法研究。</p>
+
+    <h3>世界模型与视频生成</h3>
+    <p>关注视频生成、时空建模、交互式生成，以及面向物理世界的预测与学习。</p>
+
+    <h3>3D 生成与图形学</h3>
+    <p>关注 3D 资产生成、几何与纹理建模，以及图形学和生成模型的结合。</p>
+
+    <h3>具身智能与机器人</h3>
+    <p>关注机器人模型、感知与控制，以及把研究转化为真实系统的软硬件团队。</p>
+
+    <h3>机器学习系统与基础设施</h3>
+    <p>关注大规模训练、高效推理、GPU 性能优化与数据基础设施。</p>
+  </section>
+
+  <!-- 岗位列表：新增一行 li 即可；已确认在招后可补充地点、要求和状态 -->
+  <section id="jobs">
+    <h2>长期关注的岗位</h2>
+    <p class="note">以下为长期关注的岗位方向，具体在招职位、地点和要求以沟通为准。</p>
+    <ul>
+      <li>大模型：基模研究员、多模态算法工程师、模型方向负责人。</li>
+      <li>世界模型：世界模型研究员、视频生成算法工程师、研究负责人。</li>
+      <li>3D 与图形学：3D 生成研究员、图形学研究员、机器学习算法工程师。</li>
+      <li>机器人：具身模型研究员、机器人系统工程师、硬件研发负责人。</li>
+      <li>基础设施：ML Systems 工程师、训练与推理优化工程师、数据基础设施工程师。</li>
+    </ul>
+  </section>
+
+  <!-- 新增文章或动态：删除下面的“暂无更新”，添加标题和段落。
+       例如：
+       <h3>文章标题</h3>
+       <p class="note">2026-10-07</p>
+       <p>在这里输入正文。</p>
+       复制上面三行可继续新增内容。
+  -->
+  <section id="updates">
+    <h2>近期更新</h2>
+    <p class="note">暂无更新。这里将记录行业观察、职位动态与工作手记。</p>
+  </section>
+
+  <!-- 联系方式：可新增 <p>邮箱：你的邮箱</p> 或 <p>微信：你的微信</p> -->
+  <section id="contact">
+    <h2>联系我</h2>
+    <p>欢迎交流技术方向、人才机会与职业发展。</p>
+    <p>GitHub：<a href="https://github.com/headhunterJames123">headhunterJames123</a></p>
+  </section>
+
+  <footer>James Zhang · AI 与机器人人才招聘</footer>
+</main>
+
+
+</body></html>
