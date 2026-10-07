@@ -12,13 +12,14 @@ window.SITE_CONTENT = {
   "demo": false,
   "directions": [
     {
-      "title": "大模型与多模态",
-      "english": "Foundation Models",
-      "description": "关注基模训练、多模态理解与生成，以及支撑模型迭代的算法研究。",
+      "title": "物理ai、robotics starup寻找各方方向的负责人，最高可以给到联创",
+      "english": "starup",
+      "description": "目前十几个人，融资十几亿，ceo新能源自动驾驶高管，谷歌学术引用50万+，非常有资源。",
       "roles": [
-        "基模研究员",
-        "多模态算法工程师",
-        "模型方向负责人"
+        "AI infra负责人",
+        "多模态模负责人",
+        "evals数据负责人",
+        "pre-training负责人"
       ],
       "keywords": "Pre-training / Post-training / Multimodal",
       "tags": [
